@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen Studio — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Lumen<span>.</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <section class="contact">
+    <div class="container">
+      <span class="section-label">Get In Touch</span>
+      <h1 class="section-heading">Contact Us</h1>
+      <p class="section-intro">Have a project in mind, or just a question? Send us a message and we'll get back to you within a couple of business days.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+            <span class="error-message">Please enter your name.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <span class="error-message">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us a little about your project..."></textarea>
+            <span class="error-message">Please enter a message.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+
+          <div id="form-status"></div>
+        </form>
+
+        <aside class="contact-info">
+          <div class="info-item">
+            <h3>Email</h3>
+            <span>hello@lumenstudio.example</span>
+          </div>
+          <div class="info-item">
+            <h3>Phone</h3>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="info-item">
+            <h3>Studio</h3>
+            <span>Mangaluru, Karnataka, India</span>
+          </div>
+          <div class="info-item">
+            <h3>Hours</h3>
+            <span>Mon – Fri, 9:00 AM – 6:00 PM IST</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Lumen Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Twitter</a>
+        <a href="#">Dribbble</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
